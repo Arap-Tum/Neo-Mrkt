@@ -231,7 +231,7 @@ menu li .text {
     animation: pulse 2s infinite;
 }
 
-header, .top-bar {
+header,.top-bar {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -342,7 +342,7 @@ header, .top-bar {
     background-color: rgba(225, 215, 0, 0.5); /* Adjusted for proper rgba format */
     color: #000;
  
-
+}
 /* Go back arrow */
 
 .icon {
