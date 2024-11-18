@@ -1,6 +1,6 @@
- @media screen {
-    
-} 
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -231,6 +231,11 @@ menu li .text {
     animation: pulse 2s infinite;
 }
 
+header, .top-bar {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 /* search bar and Cart bar and icon styling */
 .top-bar {
@@ -317,110 +322,9 @@ menu li .text {
     border-radius: 50%;
     margin-left: 5px;
 }
-        /* small screens(phones) */
-        @media (max-width:740px){
-            header  {
-                overflow: hidden;
-            }
-            .top-bar {
-                align-items: flex-start;
-                padding: 2px;
-                overflow-x: hidden;
-            }
-            
-            .search-bar {
-                padding-right: 0;
-                width: 70%;
-            }
-            .search-bar input {
-                font-size: 12px;
-            }
-            .cart {
-                left: 50px; /* Adjust for smaller screens */
-                top: 5px;
-            }
-        }
-
-        /* small screens(phones) */
-        @media (max-width:480px){
-            header {
-                overflow-x: hidden;
-            }
-            .top-bar {
-                align-items: flex-start;
-                padding: 2px;
-                overflow-x: hidden;
-            }
      
-            .search-bar {
-                padding-right: 0;
-                width: 70%;
-            }
-            .search-bar button  {
-                font-size: 10px;
-            }
-            .search-bar input {
-                font-size: 12px;
-            }
-            
-            .cart {
-                left: 50px; /* Adjust for smaller screens */
-                top: 5px;
-            }
-        }
- 
 
-        /* small screens(phones) */
-        @media (max-width:354px){
-
-            .top-bar {
-                align-items: flex-start;
-                padding: 2px;
-                overflow-x: hidden;
-            }
-           
-            .search-bar {
-                padding-right: 0;
-                width: 60%;
-
-            }
-            .search-bar button i {
-                font-size: 12px;
-            }
-            .search-bar input {
-                font-size: 5px;
-            }
-
-            
-        }
-    
-/* the scroll bar */
-.scroll-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    /* background-color: #f7f7f7; */
-    
-    position: absolute; /* Adjusted from absolute if you want a fixed position */
-    top: 120px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    overflow-x: auto; /* Added to enable horizontal scrolling */
-}
-
-.categories {
-    display: inline-flex;
-    padding: 5px;
-    overflow: auto;
-    
-    /* for scroll bar to deaspear in some website */
-    &::-webkit-scrollbar{
-        display: none;
-    }
-}
-
+        
 .category-item {
     gap: 10px;
     padding: 8px;
@@ -437,43 +341,6 @@ menu li .text {
 .category-item:hover {
     background-color: rgba(225, 215, 0, 0.5); /* Adjusted for proper rgba format */
     color: #000;
-}
-    /* fit screen */ 
-    @media (max-width:400px){
-        .scroll-bar {
-            align-items: flex-start;
-            padding: 2px
-        }
-        .category-item {
-            gap: 5px;
-            padding: 4px;
-            font-size: 9px;
-
-
-        }
-    }
-
-    @media (max-width: 340px){
-        .scroll-bar {
-            align-items: flex-start;
-            padding: 2px
-        }
-        .category-item {
-            gap: 5px;
-            padding: 4px;
-            font-size: 7px;
-
-
-        }
-    }
-
-
-
-      
-
-
-
-
  
 
 /* Go back arrow */
@@ -522,3 +389,71 @@ menu li .text {
     cursor: pointer;
     font-size: 24px;
 }
+
+    /* small screens(phones) */
+    @media (max-width:740px){
+        header  {
+            overflow: hidden;
+        }
+        .top-bar {
+            align-items: flex-start;
+            padding: 2px;
+            overflow-x: hidden;
+        }
+        
+        .search-bar {
+            padding-right: 0;
+            width: 70%;
+        }
+        .search-bar input {
+            font-size: 12px;
+        }
+        .cart {
+            left: 50px; /* Adjust for smaller screens */
+            top: 5px;
+        }
+        .sidebar {
+            width: 200px;
+        }
+
+    }
+
+    /* small screens(phones) */
+    @media (max-width:480px) {
+        header {
+            overflow-x: hidden;
+        }
+        .top-bar {
+            align-items: flex-start;
+            padding: 2px;
+            overflow-x: hidden;
+        }
+ 
+        .search-bar {
+            padding-right: 0;
+            width: 70%;
+        }
+        .search-bar button  {
+            font-size: 10px;
+        }
+        .search-bar input {
+            font-size: 12px;
+        }
+        .cart {
+            left: 50px; /* Adjust for smaller screens */
+            top: 5px;
+        }
+        .sidebar {
+            width: 200px;
+        }
+        .scroll-bar {
+            align-items: flex-start;
+            padding: 2px
+        }
+        .category-item {
+            gap: 5px;
+            padding: 4px;
+            font-size: 7px;
+        }
+        
+    }
