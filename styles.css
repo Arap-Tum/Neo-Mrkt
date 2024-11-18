@@ -419,6 +419,7 @@ header, .top-bar {
     }
 
     /* small screens(phones) */
+
     @media (max-width:480px) {
         header {
             overflow-x: hidden;
@@ -443,9 +444,9 @@ header, .top-bar {
             left: 50px; /* Adjust for smaller screens */
             top: 5px;
         }
-        .sidebar {
+        /* .sidebar {
             width: 200px;
-        }
+        } */
         .scroll-bar {
             align-items: flex-start;
             padding: 2px
@@ -455,5 +456,4 @@ header, .top-bar {
             padding: 4px;
             font-size: 7px;
         }
-        
     }
